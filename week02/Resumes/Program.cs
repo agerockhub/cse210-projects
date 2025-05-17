@@ -1,9 +1,19 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
-class Program
+public class Job
 {
-    static void Main(string[] args)
+    public string _company;
+    public string _jobTitle;
+    public string _startYear;
+    public string _endYear;
+    public void Display()
     {
-        Console.WriteLine("Hello World! This is the Resumes Project.");
+        Console.WriteLine($"Name: {_company}");
+        Console.WriteLine($"Jobs:{_jobTitle}");
+        Console.WriteLine($"Jobs:{_startYear}");
+        Console.WriteLine($"Jobs:{_endYear}");
+
     }
+
 }
